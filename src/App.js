@@ -26,10 +26,16 @@ class AppList extends Component{
   CheckBoxChange = (index)=>{
     let items = this.state.items;
     items[index].isDone = !items[index].isDone
+    items.sort((a, b) => {
+      if(a.isDone < b.isDone)
+        return -1;
+      if(a.isDone > b.isDone)
+        return 1;
+      return 0;
+    })
     this.setState({
       items:items,
     })
-    this.state.items.sort((a, b) => (a.isDone <= b.isDone) ? -1 : 1)
   }
   EditItem = (index , text)=>{
     if(text.length >= 1){  // to ensure that replaced text this not empty
@@ -43,11 +49,12 @@ class AppList extends Component{
   HandleOnSubmit = (e)=>{
     e.preventDefault();
     let items = this.state.items;
+    console.log('here1');
+    items.unshift({value:this.state.new_item , isDone:false});
     this.setState({
-      items : items.concat({value:this.state.new_item , isDone:false}),
+      items : items,
       new_item:''
     })
-    this.state.items.sort((a, b) => (a.isDone <= b.isDone) ? -1 : 1)
   }
   
   render(){
