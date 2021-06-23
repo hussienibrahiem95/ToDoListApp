@@ -1,6 +1,7 @@
 This is a simple To-Do list app done with React.
 
 
-![first](/uploads/c5a3850ce942597aa2d805751313535e/first.jpeg)
+![first](https://user-images.githubusercontent.com/15314292/123104168-03faf400-d437-11eb-8c85-a4724c22eb9b.jpeg)
 
-![second](/uploads/f0558295da017e068865afe17d85bfc7/second.png)
+![second](https://user-images.githubusercontent.com/15314292/123104177-052c2100-d437-11eb-9e99-9d21646fa8ad.png)
+
