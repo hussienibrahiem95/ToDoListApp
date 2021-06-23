@@ -1,0 +1,53 @@
+.item-input {
+  padding: 10px;
+  font-size: 16px;
+  width: 270px;
+  border: 0;
+  background-color: transparent;
+  font-size: 20px;
+}
+.item-input:focus{
+  outline: none;
+}
+.item-input-checkbox{
+  width: 1.4em;
+  height: 1.4em;
+}
+.add-btn {
+  padding: 10px;
+  font-size: 16px;
+  margin: 10px;
+  margin-right: 0px;
+  background-color: #0066FF;
+  color: #FFF;
+  border: 2px solid #0066FF;
+}
+.add-btn:hover {
+  background-color: #000d57;
+  cursor: pointer;
+}
+.delete-btn {
+  padding: 10px;
+  font-size: 16px;
+  margin: 10px;
+  margin-right: 0px;
+  background-color: #ff0000;
+  color: #FFF;
+}
+.delete-btn:hover {
+  background-color: #8f3333;
+  cursor: pointer;
+}
+.theList {
+  list-style: none;
+  padding-left: 0;
+  width: 425px;
+} 
+.theList li {
+  color: #333;
+  background-color: rgba(255,255,255,.5);
+  padding: 5px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  list-style: none;
+}

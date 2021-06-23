@@ -1,0 +1,17 @@
+body {
+  padding: 50px;
+  background-color: #2D2D2D;
+  font-family: sans-serif;
+  max-width: 500px;
+  margin: auto;
+}
+.item-input-main {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #FFF;
+  width: 300px;
+}
+h1{
+  color: #61DAFB;
+  text-align: center;
+}
