@@ -39,7 +39,6 @@ class AppList extends Component{
         items:items,
       })
     }
-    this.state.items.sort((a, b) => (a.isDone <= b.isDone) ? -1 : 1)
   }
   HandleOnSubmit = (e)=>{
     e.preventDefault();
@@ -48,7 +47,7 @@ class AppList extends Component{
       items : items.concat({value:this.state.new_item , isDone:false}),
       new_item:''
     })
-
+    this.state.items.sort((a, b) => (a.isDone <= b.isDone) ? -1 : 1)
   }
   
   render(){
