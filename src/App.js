@@ -29,6 +29,7 @@ class AppList extends Component{
     this.setState({
       items:items,
     })
+    this.state.items.sort((a, b) => (a.isDone <= b.isDone) ? -1 : 1)
   }
   EditItem = (index , text)=>{
     if(text.length >= 1){  // to ensure that replaced text this not empty
@@ -38,6 +39,7 @@ class AppList extends Component{
         items:items,
       })
     }
+    this.state.items.sort((a, b) => (a.isDone <= b.isDone) ? -1 : 1)
   }
   HandleOnSubmit = (e)=>{
     e.preventDefault();
@@ -46,10 +48,11 @@ class AppList extends Component{
       items : items.concat({value:this.state.new_item , isDone:false}),
       new_item:''
     })
+
   }
   
   render(){
-    this.state.items.sort((a, b) => (a.isDone <= b.isDone) ? -1 : 1)
+   
     return(
       <div>  
           <h1> To Do List App </h1>
