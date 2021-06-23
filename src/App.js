@@ -49,7 +49,6 @@ class AppList extends Component{
   HandleOnSubmit = (e)=>{
     e.preventDefault();
     let items = this.state.items;
-    console.log('here1');
     items.unshift({value:this.state.new_item , isDone:false});
     this.setState({
       items : items,
@@ -58,7 +57,6 @@ class AppList extends Component{
   }
   
   render(){
-   
     return(
       <div>  
           <h1> To Do List App </h1>
